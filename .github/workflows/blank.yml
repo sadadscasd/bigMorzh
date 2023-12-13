@@ -30,11 +30,8 @@ jobs:
         run: docker build -t lol .
       # login
       - name: docker login
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: sadadscasd
-          password: ${{ secrets.GH_TOKEN }}
+        run: echo ${{ secrets.GH_TOKEN }} | docker login -u sadadscasd --password-stdin
+       
           
       # Runs a set of commands using the runners shell
       - name: docker push
