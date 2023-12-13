@@ -39,8 +39,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: docker push
         run: |
-            docker tag lol docker.pkg.github.com/sadadscasd/bigMorzh/python222:1  
-            docker push lol docker.pkg.github.com/sadadscasd/bigMorzh/python222:1     
+            docker tag lol docker.pkg.github.com/sadadscasd/bigmorzh/python222:1  
+            docker push lol docker.pkg.github.com/sadadscasd/bigmorzh/python222:1     
         
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
