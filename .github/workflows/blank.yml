@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: docker build
-        run: docker build -t sadadscasd/bigmorzh/python222:1 .
+        run: docker build -t lol .
       # login
       - name: docker login
         uses: docker/login-action@v2
@@ -38,7 +38,7 @@ jobs:
           
       # Runs a set of commands using the runners shell
       - name: docker push
-        run: docker push docker.pkg.github.com/sadadscasd/bigmorzh/python222:1     
+        run: docker push lol docker.pkg.github.com/sadadscasd/bigMorzh/python222:1     
         
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
